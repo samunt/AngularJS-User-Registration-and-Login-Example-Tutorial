@@ -27,6 +27,12 @@
                 controllerAs: 'vm'
             })
 
+            .when('/closet', {
+              controller: 'ClosetController',
+              templateUrl: 'closet/closet.view.html',
+              controllerAs: 'vm'
+            })
+
             .otherwise({ redirectTo: '/login' });
     }
 
